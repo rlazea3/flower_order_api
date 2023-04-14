@@ -1,6 +1,5 @@
 class RequestAuthorizer
     extend Dry::Initializer
-    include JsonWebToken
 
     option :headers
 

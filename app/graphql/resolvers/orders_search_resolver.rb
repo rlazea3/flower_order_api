@@ -10,5 +10,9 @@ module Resolvers
         scope { Order.all }
 
         option(:status, type: String) { |scope, value| scope.where(status: value) }
+
+        def self.authorized?(object, context)
+            context[:current_user].present?
+        end
     end
 end

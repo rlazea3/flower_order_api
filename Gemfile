@@ -41,6 +41,8 @@ gem 'bcrypt'
 gem 'graphql'
 gem 'dry-initializer'
 gem 'search_object_graphql'
+gem 'pry'
+gem 'rspec'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem

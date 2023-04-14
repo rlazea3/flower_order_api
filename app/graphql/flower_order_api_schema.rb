@@ -37,4 +37,8 @@ class FlowerOrderApiSchema < GraphQL::Schema
     # For example, use Rails' GlobalID library (https://github.com/rails/globalid):
     GlobalID.find(global_id)
   end
+
+  def self.unauthorized_object(error)
+    raise GraphQL::ExecutionError, "Unauthorized access"
+  end
 end
