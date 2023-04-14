@@ -42,7 +42,9 @@ gem 'graphql'
 gem 'dry-initializer'
 gem 'search_object_graphql'
 gem 'pry'
-gem 'rspec'
+gem 'rspec-rails'
+gem 'factory_bot_rails'
+gem 'timecop'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem

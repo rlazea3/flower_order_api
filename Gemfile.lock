@@ -80,6 +80,11 @@ GEM
     diff-lcs (1.5.0)
     dry-initializer (3.1.1)
     erubi (1.12.0)
+    factory_bot (6.2.1)
+      activesupport (>= 5.0.0)
+    factory_bot_rails (6.2.0)
+      factory_bot (~> 6.2.0)
+      railties (>= 5.0.0)
     globalid (1.1.0)
       activesupport (>= 5.0)
     graphql (2.0.21)
@@ -153,10 +158,6 @@ GEM
     rake (13.0.6)
     reline (0.3.3)
       io-console (~> 0.5)
-    rspec (3.12.0)
-      rspec-core (~> 3.12.0)
-      rspec-expectations (~> 3.12.0)
-      rspec-mocks (~> 3.12.0)
     rspec-core (3.12.1)
       rspec-support (~> 3.12.0)
     rspec-expectations (3.12.2)
@@ -165,12 +166,21 @@ GEM
     rspec-mocks (3.12.5)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.12.0)
+    rspec-rails (6.0.1)
+      actionpack (>= 6.1)
+      activesupport (>= 6.1)
+      railties (>= 6.1)
+      rspec-core (~> 3.11)
+      rspec-expectations (~> 3.11)
+      rspec-mocks (~> 3.11)
+      rspec-support (~> 3.11)
     rspec-support (3.12.0)
     search_object (1.2.5)
     search_object_graphql (1.0.4)
       graphql (> 1.8)
       search_object (~> 1.2.2)
     thor (1.2.1)
+    timecop (0.9.6)
     timeout (0.3.2)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
@@ -187,14 +197,16 @@ DEPENDENCIES
   bootsnap
   debug
   dry-initializer
+  factory_bot_rails
   graphql
   jwt
   mysql2 (~> 0.5)
   pry
   puma (~> 5.0)
   rails (~> 7.0.4, >= 7.0.4.3)
-  rspec
+  rspec-rails
   search_object_graphql
+  timecop
   tzinfo-data
 
 RUBY VERSION
